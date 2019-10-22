@@ -220,24 +220,24 @@ button {
   letter-spacing: 1px;
   text-transform: capitalize; }
   .btn-custom:hover {
-    background-color: #d2374b;
-    border-color: #d2374b;
+    background-color: #d66d12;
+    border-color: #d66d12;
     color: #fff; }
   .btn-custom:active {
-    background-color: #d2374b;
-    border-color: #d2374b;
+    background-color: #d66d12;
+    border-color: #d66d12;
     color: #fff; }
   .btn-custom:focus {
-    background-color: #d2374b;
-    border-color: #d2374b;
+    background-color: #d66d12;
+    border-color: #d66d12;
     color: #fff; }
   .btn-custom.active {
-    background-color: #d2374b;
-    border-color: #d2374b;
+    background-color: #d66d12;
+    border-color: #d66d12;
     color: #fff; }
   .btn-custom.focus {
-    background-color: #d2374b;
-    border-color: #d2374b;
+    background-color: #d66d12;
+    border-color: #d66d12;
     color: #fff; }
 
 .vertical-content {
