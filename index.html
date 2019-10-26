@@ -28,6 +28,8 @@
         <!-- Pe7 Icon -->
         <link rel="stylesheet" type="text/css" href="css/pe-icon-7.css">
 
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
         <!-- Owl Slider -->
         <link rel="stylesheet" href="css/owl.carousel.css" />
         <link rel="stylesheet" href="css/owl.theme.css" />
@@ -36,16 +38,16 @@
         <!-- Custom  Css -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    </head>    
+    </head>
     <body>
 
         <!--Navbar Start-->
-        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky" id="counter">
             <div class="container">
                 <!-- LOGO -->
                 <a class="logo navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Logo de Grupo + 3" class="img-fluid logo-light"> 
-                    <img src="images/logo.png" alt="Logo de Grupo + 3" class="img-fluid logo-dark">
+                    <img src="images/logo-dark.png" alt="" class="img-fluid logo-light"> 
+                    <img src="images/logo.png" alt="" class="img-fluid logo-dark">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="mdi mdi-menu"></i>
@@ -56,13 +58,13 @@
                             <a href="#home" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#aboutus" class="nav-link">Sobre Nosotros</a>
+                            <a href="#aboutus" class="nav-link">Acerca de Grupo + 3</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#services" class="nav-link">Nuestros productos</a>
+                            <a href="#services" class="nav-link">Marcas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#partners" class="nav-link">Nuestros aliados</a>
+                            <a href="#partners" class="nav-link">Nuestros clientes</a>
                         </li>
                         <li class="nav-item mr-3">
                             <a href="#contact" class="nav-link">Contacto</a>
@@ -74,20 +76,21 @@
         <!-- Navbar End -->
 
         <!--Start Home-->
-        <section class="h-100vh" id="home">
+        <section class="home-bg home-half" id="home">
             <div class="bg-overlay-gradient"></div>
             <div class="home-table">
                 <div class="home-table-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12" data-aos="fade-up">
+                            <div class="col-lg-12">
                                 <div class="text-white text-center">
                                     <div class="pro_condition">
                                         <ul class="mb-0 list-inline text-center">
                                             <li class="list-inline-item mr-0">Somos Grupo + 3</li>
                                         </ul>
                                     </div>
-                                    <h1 class="header_title mx-auto mt-4 mb-0 font-weight-normal"><span class="text-typed" data-elements="Descubre todo lo que podemos ofrecerte,We love make things amazing and simple,We Are Creative And Modern Template"></span></h1>
+                                    <h1 class="header_title mx-auto mt-4 mb-0 font-weight-normal">We love make things amazing and simple</h1>
+                                    <p class="header_subtitle mx-auto pt-4 mb-0 pb-2 text-white">It is a long established fact that a reader will be distracted by the readable content layout readable English.</p>
                                     <div class="header_btn">
                                         <a href="#" class="btn btn-custom mt-4">Contáctanos</a>
                                     </div>
@@ -101,12 +104,15 @@
         <!--End Home-->
 
         <!-- Start About -->
-        <section class="section bg-light" id="aboutus">
+        <section class="section" id="aboutus">
             <div class="container">
-                <div class="row" data-aos="fade-up">
+                <div class="row">
                     <div class="col-lg-12">
-                        <div class="text-center section_title">
-                            <h3 class="font-weight-bold mb-0">Quiénes Somos</h3>
+                        <div class="text-center section_title services_boxes">
+                            <div class="services_icon text-custom mb-3">
+                                <i class="pe-7s-users"></i>
+                            </div>
+                            <h3 class="font-weight-bold mb-0">Quiénes <span class="text-custom">Somos</span></h3>
                             <div class="section_title_border">
                                 <div class="f-border"></div>
                                 <div class="s-border"></div>
@@ -115,244 +121,133 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5" data-aos="fade-up">
+                <div class="row mt-5">
                     <div class="col-lg-12">
-                        <div class="text-center about_content mx-auto">
-                            <p class="text-muted">Grupo + Tres está conformado por un grupo de empresas integradas, que desde el año 2010 se ha dedicado al desarrollo de diversos productos, ofreciendo las mejores alternativas y las marcas más reconocidas del mercado.</p>
-                            <p class="text-muted">Está integrado por un equipo de personas altamente motivado, 100% venezolano, que apostando al crecimiento de nuestro país busca satisfacer las necesidades de clientes en una sola opción. </p>
-                            <p class="text-muted">Año tras año vamos incorporando nuevas marcas y licencias en pro de un crecimiento y una mejora continua, que nos permita satisfacer las expectativas de nuestros clientes.</p>
+                        <div class="center-justified about_content mx-auto">
+                            <p class="text-muted">América Móvil es la empresa líder en servicios integrados de telecomunicaciones en Latinoamérica. Excluyendo China y la India, es la más grande a nivel mundial en términos de suscriptores móviles. Con el despliegue de su plataforma de comunicaciones de clase mundial le permite ofrecer a sus clientes un portafolio de servicios de valor agregado y soluciones de comunicación mejoradas en 25 países de América Latina, los Estados Unidos y Europa Central y del Este.</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="row vertical-content mt-5" data-aos="fade-up">
-                    <div class="col-lg-6">
-                        <div class="mt-3">
-                            <img src="images/business.jpg" alt="Imagen de Grupo + 3" class="mx-auto d-block img-fluid rounded business_about">
+
+                <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <div class="about_box mt-3">
+                                <div class="about_icon">
+                                    <i class="pe-7s-target"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Mision</h5>
+                                    <p class="text-muted mt-3 left-justified">Lograr que la población de cada uno de los países en donde operamos tenga acceso a productos y servicios de calidad con la más avanzada tecnología en telecomunicaciones, a precios accesibles, para acercar cada día más a las personas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="about_box mt-3">
+                                <div class="about_icon">
+                                    <i class="pe-7s-look"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Vision</h5>
+                                    <p class="text-muted mt-3 left-justified">Ser la empresa de telecomunicaciones de más rápido crecimiento y preservar nuestro liderazgo en la industria de las telecomunicaciones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="about_box mt-3">
+                                <div class="about_icon">
+                                    <i class="pe-7s-diamond"></i>
+                                </div>
+                                <div class="mt-3 about_detail">
+                                    <h5 class="font-weight-bold">Valores</h5>
+                                    <p class="text-muted mt-3 left-justified">Honestidad, Desarrollo humano, Respeto, Creatividad empresarial, Productividad, Optimismo y actitud positiva, Legalidad, Austeridad, Responsabilidad social, Sustentabilidad.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="mt-3 features_desc text-justify">
-                            <div class="features">
-                                <div class="features-icon features-left ">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Mision</h3>
-                                    <p class="features-sub-title pt-2 text-muted">Proveer a nuestros clientes con la mejor oferta en juguetes de reconocidas marcas, de la mejor calidad para niños y niñas que desarrollen su imaginación, contribuyan con su aprendizaje y desarrollen sus preferencias y habilidades a futuro.</p>
-                                </div>
-                            </div> 
-
-                            <div class="features">
-                                <div class="features-icon features-left">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Vision</h3>
-                                    <p class="features-sub-title pt-2 text-muted">Ser un grupo de empresas innovadoras, eficientes y responsables; especializadas en la comercialización de juguetes, materiales de oficina e informática de la mejor calidad y de las marcas más reconocidas; posicionándonos como líderes a nivel nacional.</p>
-                                </div>
-                            </div> 
-
-                            <div class="features">
-                                <div class="features-icon features-left">
-                                    <i class="mdi mdi-check"></i>
-                                </div>
-                                <div class="features-desc">
-                                    <h3 class="features-title">Valores</h3>
-                                    <p class="features-sub-title pt-2 text-muted">Nuestros valores se sustentan en dos pilares fundamentales: seriedad y honestidad, basados en un auténtico compromiso de responsabilidad como norma ética en todos nuestros actos. Siendo innovadores, manteniendo alta calidad y excelencia en nuestros productos y servicios, así como el buen trato a nuestros clientes y proveedores. Trabajamos en equipo, con profesionalismo y pasión lo que nos da nuestra Identidad, adicionalmente estamos altamente comprometidos con la responsabilidad social.</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- End About-->
 
-        <!-- Start Cta -->
-        <section class="section bg-cta-img">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12">
-                        <div class="text-center text-white">
-                            <h2 class="font-weight-normal">Seguimos ganándonos los corazones y las mentes de nuestros clientes.</h2>
-                            <p class="mx-auto cta-desc mt-4 pt-2">Un servicio receptivo y una honestidad refrescante hacen que nuestros clientes vuelvan a nosotros una y otra vez</p>
-                            <div class="mt-4 pt-3">
-                                <a href="#" class="btn btn-custom btn-rounded">Contáctanos</a>
-                            </div>
+        <!-- PRIMER BANNER -->
+        <div class="wrapper">
+            <section class="left-section">
+                <div class="background-1"></div>
+            </section>
+            <section class="right-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="./images/g3toys.png" alt="" class="logo-section">
+                            <p class="parrafo-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum itaque necessitatibus facere tenetur praesentium in ad consequatur voluptas quas!</p>
+                            <a href="#" class="btn btn-custom">Read More</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- End Cta -->
+            </section>
+        </div>
 
-        <!-- Start Blog -->
-        <section class="section" id="services">
-            <div class="container" id="counter">
-                <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12">
-                        <div class="text-center section_title">
-                            <h3 class="font-weight-bold mb-0">Nuestros productos</h3>
-                            <div class="section_title_border">
-                                <div class="f-border"></div>
-                                <div class="s-border"></div>
-                                <div class="f-border"></div>
-                            </div>
-                            <p class="sec_subtitle text-muted mx-auto mt-2">Tenemos una increible seleccion de productos para ti.</p>
+        <!-- SEGUNDO BANNER -->
+        <div class="wrapper d-none d-lg-block">
+            <section class="left-section2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="./images/g3toys.png" alt="" class="logo-section">
+                            <p class="parrafo-section">2Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum itaque necessitatibus facere tenetur praesentium in ad consequatur voluptas quas!</p>
+                            <a href="#" class="btn btn-custom">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-4">
-                        <div class="blog_box mt-3">
-                            <div class="blog_img">
-                                <img src="images/blog/blog-1.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                            </div>
-                            <div class="blog_detail rounded m-2 p-3  bg-white">
-                                <h6 class="mb-0 text-center"><span class="blog_detail_badge text-uppercase">Juguetes</span></h6>
-                                <h5 class="font-weight-bold"><a href="#" class="text-dark">Nuestras increibles marcas</a></h5>
-                                <p class="mt-2 text-muted">Encuentra desde la ultima colección de Melissa & Doug, Num Noms, L.O.L Surprise hasta los mas divertidos juguetes de Little Tikes.</p>
-                                <div class="mt-3">
-                                    <a href="#" class="btn btn-custom w-100">Conoce más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog_box mt-3">
-                            <div class="blog_img">
-                                <img src="images/blog/blog-2.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                            </div>
-                            <div class="blog_detail rounded m-2 p-3  bg-white">
-                                <h6 class="mb-0 text-center"><span class="blog_detail_badge text-uppercase">Informática y Consumibles</span></h6>
-                                <h5 class="font-weight-bold"><a href="#" class="text-dark">Lo mas actual y moderno</a></h5>
-                                <p class="mt-2 text-muted">Computadoras e impresoras, principalmente HP, Dell y Samsung, tambien Tóner y Tintas, HP, Epson, Samsung y genéricos.</p>
-                                <div class="mt-3">
-                                    <a href="#" class="btn btn-custom w-100">Conoce más</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog_box mt-3">
-                            <div class="blog_img">
-                                <img src="images/blog/blog-3.jpg" alt="" class="img-fluid mx-auto d-block rounded">
-                            </div>
-                            <div class="blog_detail rounded m-2 p-3  bg-white">
-                                <h6 class="mb-0 text-center"><span class="blog_detail_badge text-uppercase">Materiales de oficina</span></h6>
-                                <h5 class="font-weight-bold"><a href="#" class="text-dark">Todo lo que necesitas</a></h5>
-                                <p class="mt-2 text-muted">Resmas de papel, rollos, carpetas, cartulinas, lápices, bolígrafos, engrapadoras, clips, correctores y en general todo en oficina.</p>
-                                <div class="mt-3">
-                                    <a href="#" class="btn btn-custom w-100">Conoce más</a>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Blog -->
+                
+            </section>
+            <section class="right-section2" >
+                <div class="background-2"></div>
+            </section>
+        </div>
 
-        <!-- Start Team -->
-        <section class="section bg-light" id="partners">
-            <div class="container">
-                <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12">
-                        <div class="text-center section_title">
-                            <h3 class="font-weight-bold mb-0">Nuestros aliados</h3>
-                            <div class="section_title_border">
-                                <div class="f-border"></div>
-                                <div class="s-border"></div>
-                                <div class="f-border"></div>
-                            </div>
-                            <p class="text-muted sec_subtitle mx-auto mt-2">Hemos establecido excelentes relaciones con una amplia y diversa gama de los principales fabricantes y proveedores de servicios de la industria para ofrecer la mejor tecnología a nuestros clientes. </p>
+        <div class="wrapper d-block d-lg-none">
+            <section class="left-section">
+                <div class="background-2"></div>
+            </section>
+            <section class="right-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="./images/g3toys.png" alt="" class="logo-section">
+                            <p class="parrafo-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum itaque necessitatibus facere tenetur praesentium in ad consequatur voluptas quas!</p>
+                            <a href="#" class="btn btn-custom">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <div class="mt-3 team_box bg-white p-3">
-                            <div class="row vertical-content">
-                                <div class="col-lg-5">
-                                    <div>
-                                        <img src="images/team/team-1.png" alt="" class="img-fluid mx-auto d-block">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="team_detail">
-                                        <h5 class="font-weight-bold mb-0">Melissa & Doug</h5>
-                                        <p class="team_desc text-muted">Juguetes didácticos que promueven la imaginación y la creatividad.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-3 team_box bg-white p-3">
-                            <div class="row vertical-content">
-                                <div class="col-lg-5">
-                                    <div>
-                                        <img src="images/team/team-2.jpg" alt="" class="img-fluid mx-auto d-block">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="team_detail">
-                                        <h5 class="font-weight-bold mb-0">Num Noms</h5>
-                                        <p class="team_desc text-muted">Están hechos de una taza llena de ternura y una cucharada de sorpresa. Para crear tu propia fusión de sabores, mezcla un NUM y un NOM.</p>
-                                    </div>
-                                </div>
-                            </div>
+            </section>
+        </div>
+
+        <!-- TERCER BANNER -->
+        <div class="wrapper">
+            <section class="left-section">
+                <div class="background-3"></div>
+            </section>
+            <section class="right-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="./images/g3toys.png" alt="" class="logo-section">
+                            <p class="parrafo-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cum itaque necessitatibus facere tenetur praesentium in ad consequatur voluptas quas!</p>
+                            <a href="#" class="btn btn-custom">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-lg-6">
-                        <div class="mt-3 team_box bg-white p-3">
-                            <div class="row vertical-content">
-                                <div class="col-lg-5">
-                                    <div>
-                                        <img src="images/team/team-3.jpg" alt="" class="img-fluid mx-auto d-block">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="team_detail">
-                                        <h5 class="font-weight-bold mb-0">L.O.L Surprise!</h5>
-                                        <p class="team_desc text-muted">L.O.L. Surprise Tots Doll ofrecen 7 capas de sorpresas.Cada capa revela una pista de qué muñeca L.O.L. vas a obtener.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mt-3 team_box bg-white p-3">
-                            <div class="row vertical-content">
-                                <div class="col-lg-5">
-                                    <div>
-                                        <img src="images/team/team-4.jpg" alt="" class="img-fluid mx-auto d-block">
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="team_detail">
-                                        <h5 class="font-weight-bold mb-0">Little Tikes</h5>
-                                        <p class="team_desc text-muted">Son productos innovadores enfocados en juegos físicos, sociales y divertidos que construyen tanto la mente como el cuerpo del niño.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Team -->
+            </section>
+        </div>
 
         <!-- Start Contact -->
         <section class="section" id="contact">
             <div class="container">
-                <div class="row" data-aos="fade-up">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center section_title">
-                            <h3 class="font-weight-bold mb-0">¿Tienes alguna pregunta?</h3>
+                            <h3 class="font-weight-bold mb-0">Contacto</h3>
                             <div class="section_title_border">
                                 <div class="f-border"></div>
                                 <div class="s-border"></div>
@@ -441,8 +336,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h6 class="mt-3 text-white font-weight-normal">Dragon</h6>
-                        <div class="footer_title_border"></div>
+                        <img src="./images/logo-dark.png" alt="">
                         <div class="mt-4">
                             <p class="mb-0">2019 &copy; Grupo + 3 | Todos los derechos reservados</p>
                             <ul class="list-inline fot_social mt-4">
@@ -465,7 +359,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-2">
-                        <h6 class="mt-3 text-white font-weight-normal">Siguenos</h6>
+                        <h6 class="mt-3 text-white font-weight-normal">Síguenos</h6>
                         <div class="footer_title_border"></div>
                         <ul class="list-unstyled footer_menu_list mb-0 mt-4">
                             <li><a href="#">Facebook</a></li>
@@ -511,24 +405,12 @@
         <script src="js/custom.js"></script>  
 
         <script>
-            $.backstretch(["images/home-bg1.jpg","images/home-bg2.jpg","images/home-bg3.jpg"], {
-                duration: 3000,
-                fade: 750
-            });
 
             AOS.init({
                 easing: 'ease-in-out-sine',
                 duration: 1000
             });
 
-            $(".text-typed").each(function(){
-                var $this = $(this);
-                $this.typed({
-                strings: $this.attr('data-elements').split(','),
-                typeSpeed: 100, // typing speed
-                backDelay: 3000 // pause before backspacing
-                });
-            });
         </script>
 
     </body>
