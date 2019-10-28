@@ -335,13 +335,13 @@ button {
         content: "";
         margin: 0px; }
     .home-table .home-table-center .header_title {
-      font-size: 48px;
+      font-size: 38px;
       line-height: 1.2;
-      max-width: 750px;
+      max-width: 900px;
       text-transform: capitalize; }
     .home-table .home-table-center .header_subtitle {
       line-height: 1.8;
-      max-width: 570px;
+      max-width: 700px;
       color: rgba(255, 255, 255, 0.6) !important; }
 
 /*--- DEMO 2 ---*/
