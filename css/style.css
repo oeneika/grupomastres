@@ -1150,9 +1150,18 @@ button {
 
 div.modal-body div.imagen-modal.m1 {
   background-image: url("../images/imagen1.jpg");
-  height: 350px;
-  background-size: cover;
+  height: 200px;
+  background-size: 100%;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+  div.modal-body div.imagen-modal.m1 {
+    background-image: url("../images/imagen1.jpg");
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .btn-shadow.btn-primary {
