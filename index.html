@@ -23,6 +23,9 @@
         <!-- Animate Css -->
         <link href="css/aos.css" rel="stylesheet">
 
+        <!-- Youtube Css -->
+        <link rel="stylesheet" href="css/ytplayer.css">
+
         <!-- Material Icon -->
         <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
 
@@ -35,6 +38,10 @@
         <link rel="stylesheet" href="css/owl.carousel.css" />
         <link rel="stylesheet" href="css/owl.theme.css" />
         <link rel="stylesheet" href="css/owl.transitions.css" />
+
+        <link rel="stylesheet" href="plugins/video-player-lazy-load-rtop/dist/css/rtop.videoPlayer.1.0.0.min.css">
+        <!-- font awesome if optional but highly recommended -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
         <!-- Custom  Css -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -114,6 +121,22 @@
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="myVideo" id="my_video3" data-video="video/parte3.mp4" data-poster="images/principios10.jpg" data-type='video/mp4'></div>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <!--Navbar Start-->
         <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky" id="counter">
             <div class="container">
@@ -143,6 +166,7 @@
                             <a href="#contact" class="nav-link">Contacto</a>
                         </li>
                     </ul>
+                    <button class="btn btn-sm btn-custom navbar-btn btn-rounded">Visita nuestra tienda</button>
                 </div>
             </div>
         </nav>
@@ -150,24 +174,29 @@
 
         <!--Start Home-->
         <section class="h-100vh" id="home">
-                <div class="bg-overlay"></div>
-                <div class="home-table">
-                    <div class="home-table-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="text-white text-center" data-aos="fade-up">
-                                        <div class="pro_condition">
-                                            <ul class="mb-0 list-inline text-center">
-                                                <li class="list-inline-item mr-0">Somos Grupo + 3</li>
-                                            </ul>
-                                        </div>
-                                        <h1 class="header_title mx-auto mt-4 mb-0 font-weight-normal">Ofrecemos alternativas, trabajando de la mano con
-                                        las marcas más reconocidas del mercado</h1>
-                                        <p class="header_subtitle mx-auto pt-4 mb-0 pb-2 text-white">Desde el 2010 ofrecemos calidad en los productos que
-                                        comercializamos, integrado por un equipo comprometido que busca satisfacer las necesidades de nuestros clientes.</p>
-                                        <div class="header_btn">
-                                            <a href="#contact" class="btn btn-custom mt-4">Contáctanos</a>
+            <div class="video-container">
+                <video autoplay muted loop id="video">
+                <source src="./video/parte7.mp4" type="video/mp4">
+                </video>
+                <div class="homepage-hero-content">
+                    <div class="home-table">
+                        <div class="home-table-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="text-white text-center" data-aos="fade-up">
+                                            <div class="pro_condition">
+                                                <ul class="mb-0 list-inline text-center">
+                                                    <li class="list-inline-item mr-0">Somos Grupo + 3</li>
+                                                </ul>
+                                            </div>
+                                            <h1 class="header_title mx-auto mt-4 mb-0 font-weight-normal">Ofrecemos alternativas, trabajando de la mano con
+                                            las marcas más reconocidas del mercado</h1>
+                                            <p class="header_subtitle mx-auto pt-4 mb-0 pb-2 text-white">Desde el 2010 ofrecemos calidad en los productos que
+                                            comercializamos, integrado por un equipo comprometido que busca satisfacer las necesidades de nuestros clientes.</p>
+                                            <div class="header_btn">
+                                                <a href="#contact" class="btn btn-custom mt-4">Contáctanos</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -175,8 +204,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--End Home-->
+            </div>
+        </section>
+        <!--End Home-->
 
 
         <!-- Start About -->
@@ -217,7 +247,7 @@
                 <div class="row mt-5 pt-3 vertical-content" data-aos="zoom-in-down">
                     <div class="col-lg-6">
                         <div class="about_box mt-4">
-                            <img src="images/principios1.jpg" class="img-fluid" alt="">
+                            <div class="myVideo" id="my_video" data-video="video/parte1.mp4" data-poster="images/principios4.jpg" data-type='video/mp4'></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -254,7 +284,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="softwere-features-img mt-4">
-                            <img src="images/principios2.jpg" class="img-fluid" alt="">
+                            <div class="myVideo" id="my_video2" data-video="video/parte2.mp4" data-poster="images/principios5.jpg" data-type='video/mp4'></div>
                         </div>
                     </div>
                 </div>
@@ -262,7 +292,7 @@
                 <div class="row mt-5 pt-3 vertical-content" data-aos="zoom-in-down">
                     <div class="col-lg-6">
                         <div class="about_box mt-4">
-                            <img src="images/principios3.jpg" class="img-fluid" alt="">
+                                <div class="myVideo" id="my_video4" data-video="video/parte4.mp4" data-poster="images/principios7.jpg" data-type='video/mp4'></div>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -449,9 +479,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="row padding-50">
+                    <div class="col-md-3">
+                        <img src="images/sinfoto.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/sinfoto.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/sinfoto.jpg" alt="" class="w-100">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/sinfoto.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="images/bannerlol.jpg" alt="" class="w-100">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Start Services -->
+
+        <!-- Start Video Section -->
+        <section class="section bg-video">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center section_title text-white">
+                            <h3 class="font-weight-bold mb-0">Mantenemos la alta calidad de nuestros productos</h3>
+                            <div class="section_title_border">
+                                <div class="f-border bg-white"></div>
+                                <div class="s-border bg-white"></div>
+                                <div class="f-border bg-white"></div>
+                            </div>
+                            <p class="sec_subtitle mx-auto mt-2">Somos un equipo con profesionalismo y pasión por lo que hacemos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <a href="javascript:void(0)" class="video_presentation_play" data-toggle="modal" data-target="#videoModal">
+                                <i class="mdi mdi-play presentation_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- End Video Section -->
 
 
         <!-- Start Contact -->
@@ -609,11 +688,17 @@
         <!-- Animate js -->
         <script src="js/aos.js"></script>
 
+        <!--YT Background-->
+        <script src="js/jquery.mb.YTPlayer.js"></script>  
+
         <!-- MFP JS -->
         <script src="js/jquery.magnific-popup.min.js"></script>
 
         <!-- Custom Js   -->
         <script src="js/custom.js"></script>  
+
+        <!-- required video player js source -->
+	    <script type="text/javascript" src="plugins/video-player-lazy-load-rtop/dist/js/rtop.videoPlayer.1.0.0.min.js"></script>
 
         <script>
 
@@ -622,10 +707,30 @@
                 duration: 1000
             });
 
-            $.backstretch(["images/home-bg1.jpg","images/home-bg2.jpg","images/home-bg3.jpg"], {
-                duration: 3000,
-                fade: 750
+            $(".youtube-bg").mb_YTPlayer();
+
+            $(document).ready(function(){
+			var vid = $('#my_video').RTOP_VideoPlayer({
+				showFullScreen: true,
+				showTimer: true,
+				showSoundControl: true
             });
+            var vid = $('#my_video2').RTOP_VideoPlayer({
+				showFullScreen: true,
+				showTimer: true,
+				showSoundControl: true
+            });
+            var vid = $('#my_video3').RTOP_VideoPlayer({
+				showFullScreen: true,
+				showTimer: true,
+				showSoundControl: true
+            });
+            var vid = $('#my_video4').RTOP_VideoPlayer({
+				showFullScreen: true,
+				showTimer: true,
+				showSoundControl: true
+			});
+		});
 
         </script>
 
