@@ -325,8 +325,8 @@ button {
     display: table-cell;
     vertical-align: middle; }
     .home-table .home-table-center .pro_condition li {
-      color: rgba(255, 255, 255, 0.62);
-      font-size: 15px; }
+      color: rgba(255, 255, 255, 1);
+      font-size: 18px; }
       .home-table .home-table-center .pro_condition li::after {
         content: "|";
         margin: 0 8px;
@@ -342,7 +342,7 @@ button {
     .home-table .home-table-center .header_subtitle {
       line-height: 1.8;
       max-width: 700px;
-      color: rgba(255, 255, 255, 0.6) !important; }
+      color: rgba(255, 255, 255, 1) !important; }
 
 /*--- DEMO 2 ---*/
 .home-half {
@@ -1275,6 +1275,10 @@ div.modal-body div.imagen-modal.m1 {
 
 .contenidodelvideo{
   display: block;
+}
+
+.modal-title{
+  color: #f5831f;
 }
 
 @media (min-width: 768px){
