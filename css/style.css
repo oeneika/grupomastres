@@ -845,7 +845,7 @@ button {
       .custom-nav .logo .logo-dark {
         display: inline-block !important; }
     .custom-nav .navbar-brand.logo img {
-      height: 26px; }
+      height: 40px; }
 
   .home-table .home-table-center .pro_condition li {
     display: block; }
@@ -1281,14 +1281,34 @@ div.modal-body div.imagen-modal.m1 {
   color: #f5831f;
 }
 
-@media (min-width: 768px){
-    .video{
-      display: block;
-    }
+.escritorio{
+  display: none;
+}
 
-    .contenidodelvideo{
-      display: none;
-    }
+.mobile{
+  display: block;
+}
+
+.navbar-brand{
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px){
+  .escritorio{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  .video{
+    display: block;
+  }
+
+  .contenidodelvideo{
+    display: none;
+  }
 }
 
 .contenidodelvideo{
