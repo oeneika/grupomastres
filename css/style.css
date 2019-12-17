@@ -582,7 +582,7 @@ button {
         10.VIDEO SECTION
 ============================*/
 .bg-video {
-  background-image: url(../images/home-bg1.jpg);
+  background-image: url(../images/home-bg4.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
@@ -1249,6 +1249,13 @@ div.modal-body div.imagen-modal.m1 {
     min-width: 100%;
     min-height: 100%;
     filter: opacity(0.9);
+}
+
+.canal{
+  background-image: url("../images/canal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .homepage-hero-content {
